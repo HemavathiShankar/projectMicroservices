@@ -27,6 +27,7 @@ public class OrderController {
 	 public ResponseEntity<String> placeOrder(@RequestBody OrderBody ordReq){
 		 System.out.println("in orderservile module used to take order requests");
 		 log.info("in orderservile module used to take order requests");
+		 System.out.println("welcome to retail prject")
 		 System.out.println(ordReq);
 		 long orderId=service.placeOrder(ordReq);
 		 log.info("order id"+orderId);
